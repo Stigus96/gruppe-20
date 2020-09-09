@@ -6,6 +6,7 @@ public class TCPClient {
 
     private String lastError = null;
 
+    //test
     public boolean connect(String host, int port) {
         try{
             Socket socket = new Socket(host, port);
