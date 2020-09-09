@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="javaFXlib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../javalibs/javaFXlib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../javalibs/javaFXlib" recursive="false" />
+  </library>
+</component>
