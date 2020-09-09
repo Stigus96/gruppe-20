@@ -4,9 +4,11 @@ import java.io.*;
 public class TCPClient {
     private Socket connection;
 
-    public boolean connect(Strig host, int port) {
+    private String lastError = null;
+
+    public boolean connect(String host, int port) {
         try{
-            Socket socket = newSocket(host, port);
+            Socket socket = new Socket(host, port);
             System.out.println("Successfully connected");
 
             connection = socket;
@@ -14,6 +16,8 @@ public class TCPClient {
         } catch (IOException e) {
             System.out.println("Socket error: " + e.getMessage());
             lastError = "" + e;
+            return false;
         }
+        return true;
     }
 }
